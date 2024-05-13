@@ -19,7 +19,7 @@ function FeaturedImageCardSmaller({datasmaller}) {
         {
             datasmaller.map((item, idx) => {
                 return (
-                    <img src={item.src} key={idx} className={slide === idx ? "rounded-t-xl w-full max-h-72 shadow-lg" : "rounded-t-xl w-full max-h-72 shadow-lg hidden"}/>
+                    <img src={item.src} key={idx} className={slide === idx ? "rounded-t-xl w-full max-h-72 shadow-lg" : "rounded-t-xl w-full max-h-72 shadow-lg hidden"} alt=''/>
                 )})
         }        
         <BsArrowRightCircleFill className='absolute w-6 h-6 drop-shadow hover:cursor-pointer right-4' color={'white'} onClick={nextSlide}/>

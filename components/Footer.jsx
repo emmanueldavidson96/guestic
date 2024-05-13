@@ -58,9 +58,9 @@ const Footer = () => {
           <p className="pb-2 font-light text-medium_gray">Hospitality and Coziness like no one else</p>
           <p className="pb-5 font-light">Newsletters</p>
           <p className="font-light">Get news, discount and reminder from us</p>
-          <div class="relative flex items-center">
-            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-md outline-none bg-transparent" placeholder="Enter your email address"/>
-            <button type="button" class="font-semibold absolute inset-y-0 right-0 px-4 py-2 bg-[#FFFFFF] text-[#000] rounded-r-md hover:bg-orange-400">Subscribe</button>
+          <div className="relative flex items-center">
+            <input type="text" className="w-full px-4 py-2 border border-gray-300 rounded-md outline-none bg-transparent" placeholder="Enter your email address"/>
+            <button type="button" className="font-semibold absolute inset-y-0 right-0 px-4 py-2 bg-[#FFFFFF] text-[#000] rounded-r-md hover:bg-orange-400">Subscribe</button>
           </div>
         </div>
       {/* <p className="border-t border-gray-300 mt-8 text-center py-4">&copy; copyright 2024</p> */}

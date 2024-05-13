@@ -20,7 +20,7 @@ export default function FeaturedLargeComponentSlider({data}) {
         {
             data?.map((item,idx) => {
                 return (                    
-                        <img src={item.url} key={idx} className={slide === idx ? "w-full h-full shadow-lg object-cover" : "w-full h-full shadow-lg hidden object-cover"}/>
+                        <img src={item.url} key={idx} alt='' className={slide === idx ? "w-full h-full shadow-lg object-cover" : "w-full h-full shadow-lg hidden object-cover"}/>
                 )
             })
         }

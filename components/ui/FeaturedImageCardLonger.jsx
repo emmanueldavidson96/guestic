@@ -19,7 +19,7 @@ function FeaturedImageCardLonger({data}) {
         {
             data.map((item, idx) => {
                 return (
-                    <img src={item.src} key={idx} className={slide === idx ? "rounded-t-xl w-full max-h-60 shadow-lg" : "rounded-t-xl w-full max-h-60 shadow-lg hidden"}/>
+                    <img src={item.src} key={idx} className={slide === idx ? "rounded-t-xl w-full max-h-60 shadow-lg" : "rounded-t-xl w-full max-h-60 shadow-lg hidden"} alt=""/>
                 )})
 
         }        

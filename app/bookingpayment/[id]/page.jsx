@@ -14,14 +14,17 @@ export default function BookingPayment({params}) {
   const [confirmValue, setConfirmValue] = useState();
   const [listingInfo, setListingInfo] = useState({})
   useEffect(() => {
-    const handleListingInfo = async () => {
+    if(params.id){
+      const handleListingInfo = async () => {
         const res = await axios.get(`https://guestic.onrender.com/listings/${params.id}`)
         setListingInfo(res.data)
+      }
+      handleListingInfo()
     }
-    handleListingInfo()
-  }, [])
+  }, [params.id])
   const tax_price = 12
   const new_user_fee = 33
+  
   return (
     <section className='bg-[#F8F4EC] '>
       <section className='flex flex-row justify-between w-[90%] m-auto'>
@@ -67,7 +70,7 @@ export default function BookingPayment({params}) {
                 </select> */}
             </div>
             <div className='flex flex-col ml-5 mb-3'>
-              <label className=' '>Alternative phone number</label>
+              <label className=''>Alternative phone number</label>
               <PhoneInput
                   placeholder="Enter phone number"
                   country="US"

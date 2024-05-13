@@ -36,8 +36,7 @@ function Destinations() {
     const handle_getListings = async () => {
         try{
             const res = await axios.get("https://guestic.onrender.com/listings")
-            set_listings_data(res.data);
-            console.log(listings_data)            
+            set_listings_data(res.data);           
           }
         catch(err){
             console.log(err)
@@ -165,7 +164,7 @@ function Destinations() {
                     </div>
                 </div>
                 <div className='w-[32%] h-fit overflow-hidden'>
-                    <Image src={map_image} className="h-[1000px] w-full" />
+                    <Image src={map_image} className="h-[1000px] w-full" alt=''/>
                 </div>        
             </div>
 

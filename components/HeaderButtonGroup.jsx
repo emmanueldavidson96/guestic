@@ -169,7 +169,7 @@ const HeaderButtonGroup = ({
             }}
           >
             <RxCross2 cursor={"pointer"} className="self-end" />
-            <Image src={logoImg} className="mt-[-15px]" />
+            <Image src={logoImg} className="mt-[-15px]" alt=""/>
             <Box component="form" noValidate sx={{ mt: 1 }}>
               <Grid container spacing={1}>
                 <Grid item xs={12}>
@@ -341,7 +341,7 @@ const HeaderButtonGroup = ({
             }}
           >
             <RxCross2 cursor={"pointer"} className="self-end" />
-            <Image src={logoImg} className="mt-[-15px]" />
+            <Image src={logoImg} className="mt-[-15px]" alt="" />
             <Box component="form" noValidate sx={{ mt: 1 }}>
               <Grid container spacing={1}>
                 <Grid item xs={12}>

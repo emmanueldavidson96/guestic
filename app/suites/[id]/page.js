@@ -33,8 +33,7 @@ export default function Suites({params}) {
     const handle_getListings = async () => {
         try{
             const res = await axios.get("https://guestic.onrender.com/listings")
-            set_listings_data(res.data);
-            console.log(listings_data)            
+            set_listings_data(res.data);      
           }
         catch(err){
             console.log(err)
@@ -44,12 +43,14 @@ export default function Suites({params}) {
     }, [])   
 
     useEffect(() => {
-        const handleListingInfo = async () => {
-            const res = await axios.get(`https://guestic.onrender.com/listings/${params.id}`)
-            setListingInfo(res.data)
+        if(params.id){
+            const handleListingInfo = async () => {
+                const res = await axios.get(`https://guestic.onrender.com/listings/${params.id}`)
+                setListingInfo(res.data)
+            }
+            handleListingInfo()
         }
-        handleListingInfo()
-    }, [])
+    }, [params.id])
     
   return (
     <main className="relative">
@@ -170,7 +171,7 @@ export default function Suites({params}) {
             <hr className='w-[100%] border-b-2 border-gray-300'/>
 
             <div className='w-[90%] h-full overflow-hidden m-auto'>
-                <Image src={suite_location} className='w-full h-full'/>
+                <Image src={suite_location} className='w-full h-full' alt=''/>
             </div>
 
             <div className='w-[90%] m-auto flex justify-between gap-32 '>

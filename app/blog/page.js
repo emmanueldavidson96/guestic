@@ -11,15 +11,15 @@ function Blog() {
             <div className='w-[90%] m-auto h-12 flex items-center pt-2 pb-2'>
                 <h2 className='text-2xl font-bold'>Blog News</h2>
             </div>
-            <Image src={travel_image} className='w-full h-[600px]'/>
+            <Image src={travel_image} className='w-full h-[600px]' alt=''/>
             <section className='w-[90%] m-auto h-fit pt-8 pb-8'>
                 <h3 className='text-xl font-bold'>Best time of the year for different Vacations</h3>
                 <p className='text-sm leading-6'>
                     Embarking on a family vacation is a thrilling endeavor that promises cherished moments and lifelong memories. 
                     Proper planning ensures that every family member, from the youngest to the oldest, 
-                    enjoys a stress-free and delightful experience. Here's a comprehensive guide to help you plan 
+                    enjoys a stress-free and delightful experience. Here is a comprehensive guide to help you plan 
                     the perfect family getaway. Set Clear Objectives: Define the purpose of your vacation. 
-                    Whether it's relaxation, adventure, or cultural exploration, 
+                    Whether its relaxation, adventure, or cultural exploration, 
                     having a clear objective will guide your destination and activity choices.
                 </p>
             </section>

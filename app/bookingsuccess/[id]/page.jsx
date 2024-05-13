@@ -17,12 +17,14 @@ import { FaRegEdit } from "react-icons/fa";
 export default function BookingSuccess({params}) {
     const [listingInfo, setListingInfo] = useState({})
     useEffect(() => {
-        const handleListingInfo = async () => {
-            const res = await axios.get(`https://guestic.onrender.com/listings/${params.id}`)
-            setListingInfo(res.data)
+        if(params.id){
+            const handleListingInfo = async () => {
+                const res = await axios.get(`https://guestic.onrender.com/listings/${params.id}`)
+                setListingInfo(res.data)
+            }
+            handleListingInfo()
         }
-        handleListingInfo()
-    }, [])
+    }, [params.id])
     const new_userprice = 35
     const tax_price = 12
   return (

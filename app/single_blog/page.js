@@ -16,23 +16,23 @@ export default function SingleBlog() {
                 <div className='w-[65%] h-fit gap-10 flex flex-col'>
                     <h2 className='text-2xl font-bold'>Blog News</h2>
                     <div className='w-full max-h-[500px] overflow-hidden'>
-                        <Image src={blog_image} className='w-full h-full'/>
+                        <Image src={blog_image} className='w-full h-full' alt=''/>
                     </div>
                     <div className='w-full h-fit flex overflow-hidden justify-between'>
                         <div className='w-[24%] overflow-hidden '>
-                            <Image src={blog_image_2} className='w-full h-full'/>
+                            <Image src={blog_image_2} className='w-full h-full' alt=''/>
                         </div>
 
                         <div className='w-[24%] overflow-hidden '>
-                            <Image src={blog_image_3} className='w-full h-full'/>
+                            <Image src={blog_image_3} className='w-full h-full' alt=''/>
                         </div>
 
                         <div className='w-[24%] overflow-hidden'>
-                            <Image src={blog_image_4} className='w-full h-full'/>
+                            <Image src={blog_image_4} className='w-full h-full' alt=''/>
                         </div>
 
                         <div className='w-[24%] overflow-hidden '>
-                            <Image src={blog_image} className='w-full h-full'/>
+                            <Image src={blog_image} className='w-full h-full' alt=''/>
                         </div>
                     </div>
                     <h2 className='text-2xl font-bold'>Best time of the year for different Vacations</h2>
@@ -40,12 +40,12 @@ export default function SingleBlog() {
                         Embarking on a family vacation is a thrilling endeavor that promises cherished moments and lifelong memories. 
                         Proper planning ensures that every family member, from the youngest to the oldest, 
                         enjoys a stress-free and delightful experience. 
-                        Here's a comprehensive guide to help you plan the perfect family getaway.
+                        Here is a comprehensive guide to help you plan the perfect family getaway.
                     </p>
                     <ol className='list-decimal list-inside w-full flex flex-col gap-8 mb-6'>
                         <li className='text-sm font-medium text-justify'>
                             Set Clear Objectives: Define the purpose of your vacation. 
-                            Whether it's relaxation, adventure, or cultural exploration, 
+                            Whether its relaxation, adventure, or cultural exploration, 
                             having a clear objective will guide your destination and activity choices.
                         </li>
 
@@ -83,11 +83,11 @@ export default function SingleBlog() {
                             rentals often provide additional amenities and a comfortable atmosphere.
                             <div className='flex w-full gap-4 justify-between'>
                                 <div className='w-[48%] h-[350px] overflow-hidden'>
-                                    <Image src={blog_image} className='w-full h-full'/>
+                                    <Image src={blog_image} className='w-full h-full' alt=''/>
                                 </div>
 
                                 <div className='w-[45%] h-[350px] overflow-hidden'>
-                                    <Image src={blog_image_3} className='w-full h-full'/>
+                                    <Image src={blog_image_3} className='w-full h-full' alt=''/>
                                 </div>                               
                             </div>
                             <p>We provide a valuable service at Guestic to add to your travel experience. <Link href="/" className='text-md font-semibold underline text-yellow-500'>Book Us Today</Link></p>
@@ -101,18 +101,18 @@ export default function SingleBlog() {
                         </li>
 
                         <li className='text-sm font-medium text-justify'>
-                            Stay Connected: Ensure you have reliable communication methods, especially if you're exploring a new destination. 
+                            Stay Connected: Ensure you have reliable communication methods, especially if you re exploring a new destination. 
                             Share your itinerary with a close friend or family member and consider using travel apps to stay organized.
                         </li>
 
                         <li className='text-sm font-medium text-justify'>
                             Embrace the Journey:  Remember that the journey itself is part of the adventure. 
-                            Whether you're road-tripping or flying, find joy in the moments spent together as a family.
+                            Whether you re road-tripping or flying, find joy in the moments spent together as a family.
                         </li>
 
                         <p className='text-justify text-sm font-medium'>
                             By considering the unique preferences of each family member and planning thoughtfully, 
-                            you can create a vacation that caters to everyone's desires, 
+                            you can create a vacation that caters to everyones desires, 
                             fostering a sense of togetherness and joy. Happy travels!
                         </p>
                     </ol>

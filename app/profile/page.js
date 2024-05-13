@@ -34,10 +34,10 @@ function Profile() {
     <main className="relative">
         <section className='w-full h-fit flex-col flex  pt-6 pb-6 bg-orange-100 '>
             <div className='w-[90%] m-auto max-h-[150px] overflow-hidden rounded-3xl'>
-              <Image src={feature_image} className='w-full h-full '/>              
+              <Image src={feature_image} className='w-full h-full ' alt=''/>              
             </div>            
             <div className='w-fit h-fit flex gap-4'>
-              <Image src={feature_image} className='w-[150px] h-[150px] rounded-full ml-40 mt-[-40px] border-4'/>
+              <Image src={feature_image} className='w-[150px] h-[150px] rounded-full ml-40 mt-[-40px] border-4' alt=''/>
               <div className='flex flex-col gap-1 pt-4'>
                 <h2 className='text-2xl font-bold'>Kayode Olotu</h2>
                 <p>olo2kayu@gmail.com</p>
@@ -162,10 +162,10 @@ function Profile() {
                   <div className='flex w-full h-fit justify-between'>
                     <div className='bg-orange-100 flex flex-col w-[48%] rounded-2xl p-8 gap-2'>
                       <div className='flex gap-4'>
-                        <Image src={feature_image} className='w-[120px] h-[150px] rounded-lg'/>
+                        <Image src={feature_image} className='w-[120px] h-[150px] rounded-lg' alt=''/>
                         <div className='flex flex-col gap-2'>
                           <h3 className='text-2xl font-bold'>1 bedroom</h3>
-                          <p className='text-xl'>King's Royal Court</p>
+                          <p className='text-xl'>Kings Royal Court</p>
                           <p className='text-xl'>123 Royalty lane, Miami, FL</p>
                         </div>
                       </div>
@@ -182,10 +182,10 @@ function Profile() {
                     
                     <div className='bg-orange-100 flex flex-col w-[48%] rounded-2xl p-8 gap-2'>
                       <div className='flex gap-4'>
-                        <Image src={feature_image} className='w-[120px] h-[150px] rounded-lg'/>
+                        <Image src={feature_image} className='w-[120px] h-[150px] rounded-lg' alt=''/>
                         <div className='flex flex-col gap-2'>
                           <h3 className='text-2xl font-bold'>2 bedroom</h3>
-                          <p className='text-xl'>King's Royal Court</p>
+                          <p className='text-xl'>Kings Royal Court</p>
                           <p className='text-xl'>123 Royalty lane, Miami, FL</p>
                         </div>
                       </div>
@@ -204,10 +204,10 @@ function Profile() {
                   <div className='flex w-full h-fit justify-between'>
                     <div className='bg-orange-100 flex flex-col w-[48%] rounded-2xl p-8 gap-2'>
                       <div className='flex gap-4'>
-                        <Image src={feature_image} className='w-[120px] h-[150px] rounded-lg'/>
+                        <Image src={feature_image} className='w-[120px] h-[150px] rounded-lg' alt=''/>
                         <div className='flex flex-col gap-2'>
                           <h3 className='text-2xl font-bold'>2 bedroom</h3>
-                          <p className='text-xl'>King's Royal Court</p>
+                          <p className='text-xl'>Kings Royal Court</p>
                           <p className='text-xl'>123 Royalty lane, Miami, FL</p>
                         </div>
                       </div>
@@ -224,10 +224,10 @@ function Profile() {
                     
                     <div className='bg-orange-100 flex flex-col w-[48%] rounded-2xl p-8 gap-2'>
                       <div className='flex gap-4'>
-                        <Image src={feature_image} className='w-[120px] h-[150px] rounded-lg'/>
+                        <Image src={feature_image} className='w-[120px] h-[150px] rounded-lg' alt=''/>
                         <div className='flex flex-col gap-2'>
                           <h3 className='text-2xl font-bold'>1 bedroom</h3>
-                          <p className='text-xl'>King's Royal Court</p>
+                          <p className='text-xl'>Kings Royal Court</p>
                           <p className='text-xl'>123 Royalty lane, Miami, FL</p>
                         </div>
                       </div>
@@ -259,9 +259,9 @@ function Profile() {
                     Vitae erat velit sed purus eu. 
                   </p>
                   <div className='flex w-[360px] h-fit p-5 border-2 rounded-lg gap-4'>
-                    <Image src={feature_image} className='w-[80px] h-[80px] rounded-md'/>
+                    <Image src={feature_image} className='w-[80px] h-[80px] rounded-md' alt=''/>
                     <div className='flex gap-2 flex-col '>
-                      <p className='font-light text-sm'>2 Bedroom | Kings Court</p>
+                      <p className='font-light text-sm'>2 Bedroom Kings Court</p>
                       <button className='border-yellow-500 border-2 p-2 rounded-2xl w-[120px] text-yellow-500'>Book Now!</button>
                     </div>
                   </div>
@@ -271,7 +271,7 @@ function Profile() {
                     Vitae erat velit sed purus eu. 
                   </p>
                   <div className='flex w-[400px] h-fit p-5 border-2 rounded-lg gap-4'>
-                    <Image src={feature_image} className='w-[80px] h-[80px] rounded-md'/>
+                    <Image src={feature_image} className='w-[80px] h-[80px] rounded-md' alt=''/>
                     <div className='flex gap-2 flex-col '>
                       <p className='font-light text-sm'>Best Vacation Places in Miami with Eatery</p>
                       <button className='border-yellow-500 border-2 p-2 rounded-2xl w-[120px] text-yellow-500'>Go to Blog!</button>

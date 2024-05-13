@@ -29,7 +29,7 @@ function FrequentlyAskedQuestions() {
     <div className='w-full h-screen flex items-center justify-center bg-white'>
         <div className='w-10/12 m-auto flex flex-col gap-3 '>
             <h2 className='font-bold text-5xl '>Frequently Asked Questions</h2>
-            <p className='text-md text-yellow-800'>Get answers to your questions and if you don't, please get in touch with us. We will reply you ASAP!</p>
+            <p className='text-md text-yellow-800'>Get answers to your questions and if you dont, please get in touch with us. We will reply you ASAP!</p>
             <div className='border-b border-slate-900 pt-6 pb-6'>
                 <ul>
                     <div className='flex items-center justify-between'>

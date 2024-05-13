@@ -7,7 +7,7 @@ export default function SingleBlogCardComponent({blog_image}) {
   return (
     <div className='w-[100%] h-fit flex flex-col bg-white rounded-2xl overflow-hidden cursor-pointer'>
         <div className='w-full max-h-[200px] overflow-hidden'>
-            <Image src={blog_image} className='h-full w-full' />
+            <Image src={blog_image} className='h-full w-full' alt=''/>
         </div>
         <div className='w-full h-fit p-3 flex flex-col gap-1'>
             <Link href="/single_blog">

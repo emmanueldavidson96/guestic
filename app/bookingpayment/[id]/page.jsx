@@ -31,27 +31,27 @@ export default function BookingPayment({params}) {
         <section className='w-[60%] bg-[#fff] rounded-md shadow-md mt-10 p-10 h-fit'>
           <h1 className='text-xl font-bold'>Guest Information</h1>
           <p className='flex flex-row'>Already have an account? <span className='text-goldenrod flex pl-2 items-center'>Log in <BsArrowRightShort size={25} className='pt-1'/></span> or sign up with <span className='text-goldenrod flex pl-2 items-center'>Google account <BsArrowRightShort size={25} className='pt-1' /></span></p>
-          <div className='flex pt-5'>
+          <div className='flex flex-col pt-5'>
             <div className='flex flex-col mb-3'>
               <label className='mb-2'>Email Address</label>
-              <input className='border border-gray-300 rounded-md w-96 mr-3 p-3' placeholder='olu2kayo@guestic.com' />
+              <input className='border border-gray-300 rounded-md w-full mr-3 p-3' placeholder='olu2kayo@guestic.com' />
             </div>
             <div className='flex flex-col mb-3'>
               <label className='mb-2'>Confirm email Address</label>
-              <input className='border border-gray-300 rounded-md w-96 p-3' placeholder='olu2kayo@guestic.com'/>
+              <input className='border border-gray-300 rounded-md w-full p-3' placeholder='olu2kayo@guestic.com'/>
             </div>
           </div>
-          <div className='flex'>
+          <div className='flex flex-col'>
             <div className='flex flex-col mb-3'>
               <label className='mb-2'>First Name</label>
-              <input className='border border-gray-300 rounded-md w-96 p-3' placeholder='Olukoya'/>
+              <input className='border border-gray-300 rounded-md w-full p-3' placeholder='Olukoya'/>
             </div>
             <div className='flex flex-col mb-3'>
-              <label className='pl-3 mb-2'>Last name</label>
-              <input className='border border-gray-300 rounded-md w-96 p-3 ml-3' placeholder='Kayode' />
+              <label className='mb-2'>Last name</label>
+              <input className='border border-gray-300 rounded-md w-full p-3' placeholder='Kayode' />
             </div>
           </div>
-          <div className='flex'>
+          <div className='flex flex-col'>
             <div className='mb-3'>
               <label className='mb-2'>Phone Number</label>
                 <PhoneInput
@@ -59,7 +59,7 @@ export default function BookingPayment({params}) {
                   value={value}
                   onChange={setValue}
                   country="US"
-                  className='border p-3 border-gray-300 rounded-md w-96 outline-none focus:outline-none focus:border-none'
+                  className='border p-3 border-gray-300 rounded-md w-full outline-none focus:outline-none focus:border-none'
                 />
                 {/* <select
                   className="px-4 py-2 border border-l-0 border-gray-300 rounded-r-md appearance-none focus:outline-none focus:ring focus:border-blue-300"
@@ -69,32 +69,32 @@ export default function BookingPayment({params}) {
                   <option value="option3">Option 3</option>
                 </select> */}
             </div>
-            <div className='flex flex-col ml-5 mb-3'>
+            <div className='flex flex-col mb-3'>
               <label className=''>Alternative phone number</label>
               <PhoneInput
                   placeholder="Enter phone number"
                   country="US"
                   value={confirmValue}
                   onChange={setConfirmValue}
-                  className='border p-3 border-gray-300 rounded-md w-96 outline-none focus:outline-none focus:border-none'
+                  className='border p-3 border-gray-300 rounded-md w-full outline-none focus:outline-none focus:border-none'
               />
             </div>
           </div>
           <div className='flex flex-col mb-3'>
             <label className='mb-2'>Birthdate</label>
-            <input className='border border-gray-300 rounded-md w-96 p-3' placeholder='DD/MM/YY'/>
+            <input className='border border-gray-300 rounded-md w-full p-3' placeholder='DD/MM/YY'/>
           </div>
-          <div className='flex'>
+          <div className='flex flex-col'>
             <div className='flex flex-col mb-3'>
               <label className='mb-2'>Password</label>
-              <input className='border border-gray-300 rounded-md w-96 p-3 mr-3' placeholder='**************' type='password'/>
+              <input className='border border-gray-300 rounded-md w-full p-3 mr-3' placeholder='**************' type='password'/>
             </div>
             <div className='flex flex-col mb-3'>
               <label className='mb-2'>Confirm password</label>
-              <input className='border border-gray-300 rounded-md w-96 p-3' placeholder='*************' type='password' />
+              <input className='border border-gray-300 rounded-md w-full p-3' placeholder='*************' type='password' />
             </div>
           </div>
-          <section className='w-full bg-[#fff] rounded-md shadow-md p-10 h-fit'>
+          <section className='w-full bg-[#fff] rounded-md shadow-md pt-10 h-fit'>
             <h1 className='text-lg font-bold p-3'>Payment</h1>
             <div className='pt-10'>
               <div className='flex flex-col mb-3 '>
@@ -102,23 +102,23 @@ export default function BookingPayment({params}) {
                 <input className='border border-gray-300 rounded-md p-3' placeholder='1234 1234 1234 1234 ' />
               </div>
             </div>
-            <div className='flex'>
+            <div className='flex flex-col'>
               <div className='flex flex-col mb-3'>
                 <label className='mb-2'>Expiration</label>
-                <input className='border border-gray-300 rounded-md w-96 p-3' placeholder='MM/YY'/>
+                <input className='border border-gray-300 rounded-md w-full p-3' placeholder='MM/YY'/>
               </div>
               <div className='flex flex-col mb-3'>
-                <label className='mb-2 pl-3'>CVC</label>
-                <input className='border border-gray-300 rounded-md w-96 ml-3 p-3 ' placeholder='3 digits at the card back' />
+                <label className='mb-2'>CVC</label>
+                <input className='border border-gray-300 rounded-md w-full p-3 ' placeholder='3 digits at the card back' />
               </div>
             </div>
-            <div className='flex'>
+            <div className='flex flex-col'>
               <div  className='flex flex-col mb-3'>
                 <label className='mb-2'>Country</label>
                   <input
                     type="text"
                     placeholder='USA'
-                    className="w-96 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300 p-3 "
+                    className="w-full border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300 p-3 "
                   />
                   {/* <select
                     className="px-4 py-2 border border-l-0 border-gray-300 rounded-md appearance-none focus:outline-none focus:ring focus:border-blue-300"
@@ -129,14 +129,14 @@ export default function BookingPayment({params}) {
                   </select> */}
               </div>
             </div>
-            <div className='flex mb-5'>
+            <div className='flex mb-5 flex-col'>
               <div className='flex flex-col mb-3'>
                 <label className='mb-2'>First name</label>
-                <input className='border border-gray-300 rounded-md w-96 p-3' placeholder='Kayode'/>
+                <input className='border border-gray-300 rounded-md w-full p-3' placeholder='Kayode'/>
               </div>
-              <div className='flex flex-col mb-3 ml-3'>
+              <div className='flex flex-col mb-3'>
                 <label className='mb-2'>Last name</label>
-                <input className='border border-gray-300 rounded-md w-96 p-3 ' placeholder='Olukoya'/>
+                <input className='border border-gray-300 rounded-md w-full p-3 ' placeholder='Olukoya'/>
               </div>
             </div>
           </section>
@@ -172,7 +172,7 @@ export default function BookingPayment({params}) {
                 <p className='font-bold text-lg'>Total</p>
                 <p className='font-bold text-lg'>US${listingInfo?.price - new_user_fee - tax_price}</p>
               </div>
-
+              
             </div>
           </div>
         </section>
